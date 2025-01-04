@@ -17,6 +17,15 @@ console.log("La somma degli elementi dell'array è:", risultato);
 
 // 👉 Challenge 3: Trova il Numero Maggiore
 // Descrizione: Scrivi una funzione che prenda un array di numeri e ritorni il più grande.
+const numeri = [5, 74, 99, 250, 64, 46];
+function trovaMassimo(numeri) {
+    if (numeri.length === 0) {
+      return null; 
+    }
+    return Math.max(...numeri);
+  }
+const numeroAlto = trovaMassimo(numeri);
+console.log("Il numero più alto è : ", numeroAlto)
 
 // 👉 Challenge 4: Fattoriale
 // Descrizione: Scrivi una funzione che calcoli il fattoriale di un numero dato (es: 5! = 5 * 4 * 3 * 2 * 1 = 120).
